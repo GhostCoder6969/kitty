@@ -2564,7 +2564,7 @@ subdir_data_for_drag(
             parent->fd_plus_one = fd + 1;
         }
     }
-    if (entry_num >= parent->children_sz) abrt(EINVAL, "drag source sub diretory index out of bounds");
+    if (entry_num >= parent->children_sz) abrt(EINVAL, "drag source sub directory index out of bounds");
     *ri = parent->children + entry_num;
     if (!(*ri)->started) {
         (*ri)->started = true;
